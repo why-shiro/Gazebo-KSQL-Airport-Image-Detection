@@ -35,13 +35,10 @@ sudo apt install -y build-essential cmake git pkg-config libgtk-3-dev \
 Next, clone the OpenCV and OpenCV contrib repositories from GitHub:
 
 ```sh
-sudo apt update
-sudo apt install -y build-essential cmake git pkg-config libgtk-3-dev \
-    libavcodec-dev libavformat-dev libswscale-dev libv4l-dev \
-    libxvidcore-dev libx264-dev libjpeg-dev libpng-dev libtiff-dev \
-    gfortran openexr libatlas-base-dev python3-dev python3-numpy \
-    libtbb2 libtbb-dev libdc1394-22-dev libgstreamer1.0-dev \
-    libgstreamer-plugins-base1.0-dev libgstreamer-plugins-good1.0-dev
+cd ~
+git clone https://github.com/opencv/opencv.git
+git clone https://github.com/opencv/opencv_contrib.git
+
 ```
 
 ## Step 3: Build OpenCV with GStreamer support
