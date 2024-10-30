@@ -1,25 +1,28 @@
 # OpenCV YOLO Project
+
 ## An Object Detection Project using OpenCV and YOLO
 
-This project demonstrates how to build OpenCV from source with GStreamer support and use it for real-time object detection using the YOLO model (best.pt).
+This project demonstrates how to build OpenCV from source with GStreamer support, how to use it for real-time object detection using the YOLO model (`best.pt`), and how to transmit the video stream over a local area network (LAN) using sockets.
 
 ## Requirements
-- OpenCV
+- OpenCV with GStreamer support
 - YOLOv11 or another compatible YOLO model
-- GStreamer and necessary plugins
+- GStreamer and its necessary plugins
+- Python libraries: `socket`, `opencv-python`, `numpy`, `torch`, and `ultralytics`
 
 ## Features
-
-- GStreamer support for OpenCV
-- Real-time object detection using YOLO
-- Python-based implementation for easy customization
-- Dockerized environment for easy deployment
+- GStreamer integration with OpenCV for high-performance video processing
+- Real-time object detection using the YOLO model
+- Video transmission over LAN using UDP sockets
+- Python-based implementation for ease of use and customization
+- Dockerized environment for easy deployment across different systems
 
 ## Installation
-To build OpenCV with GStreamer support, follow the instructions below.
 
-## Step 1: Install dependencies
-First, make sure you have all the necessary dependencies installed on your system:
+Follow the steps below to build OpenCV with GStreamer support, set up the YOLO model for object detection, and enable LAN-based video transmission.
+
+### Step 1: Install Dependencies
+First, ensure that all necessary dependencies are installed on your system:
 
 ```sh
 sudo apt update
@@ -29,9 +32,10 @@ sudo apt install -y build-essential cmake git pkg-config libgtk-3-dev \
     gfortran openexr libatlas-base-dev python3-dev python3-numpy \
     libtbb2 libtbb-dev libdc1394-22-dev libgstreamer1.0-dev \
     libgstreamer-plugins-base1.0-dev libgstreamer-plugins-good1.0-dev
+
 ```
 
-## Step 2: Clone the OpenCV repository
+## Step 2: Clone the OpenCV Repository
 Next, clone the OpenCV and OpenCV contrib repositories from GitHub:
 
 ```sh
