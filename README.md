@@ -1,5 +1,10 @@
 # OpenCV YOLO Project
 
+![PHOTO-2024-10-30-20-24-25](https://github.com/user-attachments/assets/c7be2985-ebc0-42f8-8078-74561f9206b8)
+
+![PHOTO-2024-10-30-20-26-42](https://github.com/user-attachments/assets/49280073-ee88-4963-881e-a544dd888c24)
+
+
 ## An Object Detection Project using OpenCV and YOLO
 
 This project demonstrates how to build OpenCV from source with GStreamer support, how to use it for real-time object detection using the YOLO model (`best.pt`), and how to transmit the video stream over a local area network (LAN) using sockets.
